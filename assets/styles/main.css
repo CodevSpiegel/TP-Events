@@ -1,0 +1,97 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    /* palette */
+    --main-color: #FF8C00;
+    --secondary-color: #FFFACD;
+    --accent-color: #F57C00;
+
+    /* Fonts */
+    --base-font: "Open Sans", sans-serif;
+
+    /* Font-size */
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-28: 1.75rem;
+    --fs-30: 1.875rem;
+    --fs-32: 2rem;
+    --fs-36: 2.25rem;
+    --fs-42: 2.625rem;
+    --fs-44: 2.75rem;
+    --fs-48: 3rem;
+    --fs-50: 3.125rem;
+    --fs-64: 4rem;
+    --fs-72: 4.5rem;
+    --fs-76: 4.75rem;
+}
+
+body {
+    font-family: var(--base-font);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: var(--fs-48);
+}
+h2 {
+    font-size: var(--fs-32);
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+main {
+    margin: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.event-block {
+    display: flex;
+    gap: 35px;
+    width: 1272px;
+    height: 210px;
+    background-color: #F5F5F5;
+}
+
+.right-content {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.date {
+    font-size: var(--fs-28);
+    font-weight: 300;
+}
+
+.lieux {
+    font-size: var(--fs-28);
+    color: #232323;
+}
+
+.desc {
+    font-size: var(--fs-18);
+    font-weight: 300;
+}
