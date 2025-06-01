@@ -48,7 +48,10 @@ foreach ($events as $event) {
 
     $time = strlen($event['time']) > 5 ? "de ".str_replace("-", "à", $event['time']) : $time = "à ".$event['time'];
 
-    echo $html_page->eventsListe($event, $date, $time);
+    $event["date"] = $date;
+    $event["time"] = $time;
+
+    echo $html_page->eventsListe($event);
 }
 
 
