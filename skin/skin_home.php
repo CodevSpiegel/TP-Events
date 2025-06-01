@@ -3,7 +3,7 @@
 class skin_home {
 
 
-function eventsListe( $datas = array() ) 
+function event_row( $datas = array() ) 
 {
 return <<<HTML
     <div class="event-block">

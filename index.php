@@ -14,21 +14,16 @@ $func = new functions();
 // Import GLOBAL HTML !
 //--------------------------------
 require_once ABSPATH . "skin/skin_global.php";
-$html_global = new skin_global();
-
-
-
-
-
+$global_html = new skin_global();
 
 //--------------------------------
 // Import Page HTML !
 //--------------------------------
 require_once ABSPATH . "skin/skin_home.php";
-$html_page = new skin_home();
+$this_html = new skin_home();
 
 
-echo $html_global->header();
+echo $global_html->header();
 
 
 include_once ABSPATH . "data/events.inc.php";
@@ -51,8 +46,8 @@ foreach ($events as $event) {
     $event["date"] = $date;
     $event["time"] = $time;
 
-    echo $html_page->eventsListe($event);
+    echo $this_html->event_row($event);
 }
 
 
-echo $html_global->footer();
+echo $global_html->footer();
